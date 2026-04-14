@@ -2511,7 +2511,7 @@
     function simulateReferral() {
       const name = SIM_NAMES[simIdx % SIM_NAMES.length]; const email = SIM_EMAILS[simIdx % SIM_EMAILS.length]; simIdx++;
       const plans = ['SDA Premium (NEET)', 'SDA Elite (NEET)', 'SDA Foundation Premium (VI-X)', 'SDA Foundation Elite (VI-X)'];
-      const pts = [1000, 2000, 800, 1200]; const idx = simIdx % 4;
+      const pts = [1000, 1000, 1000, 1000]; const idx = simIdx % 4;
       const today = getDateStr(); const txnId = 'TXN' + String(STATE.txnCounter++).padStart(3, '0');
       const old = STATE.availPts; const earnedPts = pts[idx];
       STATE.availPts += earnedPts; STATE.totalEarned += earnedPts; STATE.totalRefs += 1;
